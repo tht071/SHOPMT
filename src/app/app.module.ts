@@ -28,6 +28,10 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 // import { MatIconModule } from '@angular/material/icon';
 // import { MatDividerModule } from '@angular/material/divider';
 // import { MatListModule } from '@angular/material/list';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -47,7 +51,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     CheckoutComponent,
     MyOrdersComponent,
     ViewAllProductComponent,
-    SideNavComponent
+    SideNavComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +68,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     // MatIconModule,
     // MatDividerModule,
     // MatListModule
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

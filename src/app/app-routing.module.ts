@@ -1,3 +1,4 @@
+import { ContactComponent } from './contact/contact.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
@@ -13,6 +14,8 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { ViewAllProductComponent } from './view-all-product/view-all-product.component';
+import { AboutComponent } from './about/about.component';
+
 
 const routes: Routes = [
   {
@@ -57,6 +60,12 @@ const routes: Routes = [
   },{
     component:ViewAllProductComponent,
     path:'product'
+  },{
+    component:AboutComponent,
+    path:'about'
+  },{
+    component:ContactComponent,
+    path:'contact'
   }
 ];
 

@@ -15,15 +15,6 @@
   ],
   "products": [
     {
-      "name": "I phone 14 a",
-      "price": "100000",
-      "category": "mobilee",
-      "color": "black",
-      "description": "An Apple Product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": 2
-    },
-    {
       "name": "HP Laptop",
       "price": "50000",
       "category": "Laptop",
@@ -67,6 +58,42 @@
       "description": "5214124",
       "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
       "id": 10
+    },
+    {
+      "name": "Name",
+      "price": "15000",
+      "category": "1",
+      "color": "black",
+      "description": "gg",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 11
+    },
+    {
+      "name": "Nước Cam",
+      "price": "15000",
+      "category": "1",
+      "color": "black",
+      "description": "gg",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 12
+    },
+    {
+      "name": "Name",
+      "price": "15000",
+      "category": "mobile",
+      "color": "black",
+      "description": "",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 13
+    },
+    {
+      "name": "",
+      "price": "",
+      "category": "",
+      "color": "",
+      "description": "",
+      "image": "",
+      "id": 14
     }
   ],
   "users": [
@@ -83,7 +110,20 @@
       "id": 2
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 2,
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "email": "",

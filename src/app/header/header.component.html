@@ -94,7 +94,12 @@
               <div class="menu" [ngSwitch]="menuType">
                 <ul *ngSwitchCase="'default'" >
                   <li><a routerLink="">Trang chủ</a></li>
+                  <li><a routerLink="about">Giới thiệu</a></li>
+                  <li><a routerLink="contact">Liên hệ</a></li>
+                  <li><a [routerLink]="cartItems>0?'cart-page':null">Giỏ hàng({{cartItems}})</a></li>
                   <li><a routerLink="user-auth">Đăng nhập/Đăng ký</a></li>
+
+
                 </ul>
                 <ul *ngSwitchCase="'user'" >
                   <li><a routerLink="">Trang chủ</a></li>
