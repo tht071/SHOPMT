@@ -1,0 +1,63 @@
+<!-- <div class="container">
+  <div
+    class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+  >
+    <div class="col mb-5" *ngFor="let product of productList">
+      <div class="card h-100">
+        <img
+          class="card-img-top"
+          src={{product.image}}
+          alt="..."
+        />
+        <div class="card-body p-4">
+          <div class="text-center">
+            <a routerLink="product/{{product.id}}" class="fw-bolder">{{product.name}}</a>
+            <p>{{product.description}}</p>
+           <p>{{product.price}}</p>
+            <hr>
+          </div>
+        </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a routerLink="product/{{product.id}}" class="btn btn-outline-dark mt-auto" href="#">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+  <ul class="list-group" *ngFor="let cat of categoryList">
+    <a href="products/category/{{ cat.id }}" class="list-group-item">
+      {{ cat.categoryName }}
+    </a>
+  </ul>
+</div>
+</div>
+
+<div class="product-list-wrapper">
+<button (click)="sortByName()">Sort by name</button>
+<div class="row">
+  <div class="col-sm-3" *ngFor="let product of productList">
+    <div class="product-item">
+      <img src="{{product.image}}" alt="">
+    <div class="product-details">
+      <h6 class="name-head">{{product.name}}</h6>
+      <div class="product-price">
+        <h6>Giá:{{product.price}}</h6>
+      </div>
+      <div class="product-color">
+        <h6>Màu:{{product.color}}</h6>
+      </div>
+    </div>
+    <div class="product-footer">
+      <button  routerLink="/details/{{product.id}}" type="button" class="btn btn-outline-success" >Xem chi tiết</button>
+      <button  routerLink="/details/{{product.id}}" type="button" class="btn btn-outline-success" >Mua ngay</button>
+    </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+<main>
+    <app-side-nav class="menu"></app-side-nav>
+    <div class="display-area">
+      <div class="product-list">
+        <p class="message-p">{{ productMessage }}</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Tên</th>
+              <th>Giá</th>
+              <th>Màu</th>
+              <th>Danh mục</th>
+              <th>Miêu tả</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of productList">
+              <td><img src="{{ item.image }}" /></td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.price }}</td>
+              <td>{{ item.color }}</td>
+              <td>{{ item.category }}</td>
+              <td>{{ item.description }}</td>
+              <td>
+                <fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon>
+                <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}"> <fa-icon  [icon]="iconEdit"></fa-icon></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+</main>
+
+</div>

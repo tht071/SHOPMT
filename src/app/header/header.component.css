@@ -1,0 +1,146 @@
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav h1 {
+  color: rgb(242, 240, 244);
+  margin: 0;
+  font-size: 40px;
+}
+.nav .nav-search {
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
+}
+
+.nav .nav-search input {
+    flex: 1;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    height: 39px;
+    border-right: none;
+}
+
+.nav .nav-search button{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    height: 39px;
+}
+
+.nav ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav ul li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    float: right;
+}
+
+h1 a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.suggested-search{
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 300px;
+}
+.suggested-search li {
+  padding:5px;
+  border: 1px solid #ddd;
+}
+.suggested-search li a{
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.call_text_main{
+  width: 100%;
+  float: left;
+  background-color: #fe5b29;
+  height: auto;
+  padding: 10px 0px;
+}
+.call_taital{
+  width: 100%;
+  display: flex;
+}
+.call_text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.call_text a {
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0px 20px;
+}
+
+.call_text a:hover {
+  color: #363636;
+}
+.header_section {
+  width: 100%;
+  float: left;
+  background-color: #0e0c06;
+  height: auto;
+  background-size: 100%;
+}
+
+.header_bg {
+  width: 100%;
+  float: left;
+  background: #1d1d1d
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.mr-auto,
+.mx-auto {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px 20px;
+  font-size: 17px;
+  color: #fefefd;
+  margin: 0px 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fe5b29;
+}
+
+
+.navbar-brand {
+  color: rgb(251, 251, 251);
+  margin: 0;
+  font-size: 40px;
+}
+

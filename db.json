@@ -1,0 +1,135 @@
+{
+  "seller": [
+    {
+      "name": "admin",
+      "email": "admin@admin.com",
+      "password": "admin123",
+      "id": 2
+    },
+    {
+      "name": "tri",
+      "password": "tri2gmail.com",
+      "email": "123123",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone 14 a",
+      "price": "100000",
+      "category": "mobilee",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 2
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "id": 3
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": 7
+    },
+    {
+      "name": "phone",
+      "price": "13000",
+      "category": "mobile",
+      "color": "black",
+      "description": "phone 14",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 8
+    },
+    {
+      "name": "admin",
+      "price": "15000",
+      "category": "mobile",
+      "color": "black",
+      "description": "bh",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 9
+    },
+    {
+      "name": "Name",
+      "price": "15000",
+      "category": "mobile",
+      "color": "black",
+      "description": "5214124",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "name": "hoangtri",
+      "email": "tri@gmail.com",
+      "password": "123123",
+      "id": 1
+    },
+    {
+      "name": "Name",
+      "email": "name@admin.com",
+      "password": "admin",
+      "id": 2
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 612100,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "",
+      "address": "",
+      "contact": "",
+      "totalPrice": 612100,
+      "userId": 1,
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Iphone"
+    },
+    {
+      "id": 2,
+      "categoryName": "Samsung"
+    },
+    {
+      "id": 3,
+      "categoryName": "Oppo"
+    },
+    {
+      "id": 4,
+      "categoryName": "Xiaomi"
+    },
+    {
+      "id": 5,
+      "categoryName": "Vivo"
+    },
+    {
+      "id": 6,
+      "categoryName": "Huawei"
+    },
+    {
+      "id": 7,
+      "categoryName": "Realme"
+    }
+  ]
+}
