@@ -12,6 +12,11 @@ export class SellerHomeComponent implements OnInit {
   productMessage: undefined | string;
   icon = faTrash;
   iconEdit=faEdit;
+  products = [];
+  currentPage = 1;
+  totalItems = 0;
+  pageSize = 10;
+
   constructor(private product: ProductService) {}
 
   ngOnInit(): void {
@@ -38,4 +43,11 @@ export class SellerHomeComponent implements OnInit {
       }
     });
   }
+  // loadPage(page: number) {
+  //   this.product.getProduct(page, this.pageSize).subscribe((response: any) => {
+  //     this.products = response.products;
+  //     this.currentPage = response.currentPage;
+  //     this.totalItems = response.totalItems;
+  //   });
+  // }
 }

@@ -15,15 +15,6 @@
   ],
   "products": [
     {
-      "name": "HP Laptop",
-      "price": "50000",
-      "category": "Laptop",
-      "color": "black",
-      "description": "Hp laptop for student and professionals",
-      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
-      "id": 3
-    },
-    {
       "name": "Noise Smart Watch",
       "price": "2000",
       "category": "Watch",
@@ -85,15 +76,6 @@
       "description": "",
       "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
       "id": 13
-    },
-    {
-      "name": "",
-      "price": "",
-      "category": "",
-      "color": "",
-      "description": "",
-      "image": "",
-      "id": 14
     }
   ],
   "users": [
@@ -110,20 +92,7 @@
       "id": 2
     }
   ],
-  "cart": [
-    {
-      "name": "HP Laptop",
-      "price": "50000",
-      "category": "Laptop",
-      "color": "black",
-      "description": "Hp laptop for student and professionals",
-      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
-      "quantity": 1,
-      "productId": 3,
-      "userId": 2,
-      "id": 1
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "email": "",
@@ -140,6 +109,14 @@
       "totalPrice": 612100,
       "userId": 1,
       "id": 2
+    },
+    {
+      "email": "fogaming07112002@gmail.com",
+      "address": "Thôn Hà Trữ B - Xã Phú Gia - Huyện Phú Vang - Tỉnh Thừa Thiên Huế",
+      "contact": "0335605553",
+      "totalPrice": 54100,
+      "userId": 2,
+      "id": 3
     }
   ],
   "categories": [

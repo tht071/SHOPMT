@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
 
  popularProducts:undefined|product[];
  trendyProducts:undefined | product[];
+ url: string = "../assets/img1.jpg";
   constructor(private product:ProductService, ) {}
 
   ngOnInit(): void {
@@ -21,5 +22,9 @@ export class HomeComponent implements OnInit {
     this.product.trendyProducts().subscribe((data)=>{
       this.trendyProducts=data;
     })
+
   }
+  imageChange(event: any){
+    this.url = event.target.src;
+}
 }
