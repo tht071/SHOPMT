@@ -138,3 +138,18 @@ textarea#comment::placeholder {
 .padding_left_15 {
   padding-left: 10px;
 }
+.footer-top{
+  padding: 50px 0;
+  background: #111;
+
+}
+.footer-top-menu ul{
+  padding: 0;
+  margin: 0;
+}
+.footer-top-menu ul li {
+  list-style-type: none;
+  margin-top: 20px;
+  color: #fff;
+  
+}

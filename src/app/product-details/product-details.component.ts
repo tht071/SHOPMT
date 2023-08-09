@@ -44,11 +44,10 @@ export class ProductDetailsComponent implements OnInit {
        }
         })
       }
-      
-      
-      
+
+
+
     })
-    
   }
   handleQuantity(val:string){
     if(this.productQuantity<20 && val==='plus'){
@@ -78,17 +77,17 @@ export class ProductDetailsComponent implements OnInit {
            this.product.getCartList(userId);
            this.removeCart=true
           }
-        })        
+        })
       }
-      
-    } 
+
+    }
   }
   removeToCart(productId:number){
     if(!localStorage.getItem('user')){
 this.product.removeItemFromCart(productId)
     }else{
       console.warn("cartData", this.cartData);
-      
+
       this.cartData && this.product.removeToCart(this.cartData.id)
       .subscribe((result)=>{
         let user = localStorage.getItem('user');
@@ -98,6 +97,24 @@ this.product.removeItemFromCart(productId)
     }
     this.removeCart=false
   }
+days:any = 194;
+hours:number = 22;
+mins:number = 14;
+secs:number = 2;
 
+x = setInterval(() =>{
+  var futureDate:any = new Date("Dec 30, 2023 08:47:31").getTime();
+  var today:any = new Date().getTime();
+  var distance = futureDate - today;
+  this.days = Math.floor(distance/(1000 * 60 * 60 *24));
+  this.hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+  this.mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  this.secs = Math.floor((distance % (1000 * 60)) / (1000));
+
+  if(distance < 0) {
+    clearInterval(this.x);
+    this.days = "Sản phẩm không còn giảm giá";
+  }
+}, 1000)
 
 }

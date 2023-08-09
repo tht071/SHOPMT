@@ -92,7 +92,20 @@
       "id": 2
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "phone",
+      "price": "13000",
+      "category": "mobile",
+      "color": "black",
+      "description": "phone 14",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": 8,
+      "userId": 2,
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "email": "",

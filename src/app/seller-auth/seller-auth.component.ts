@@ -10,6 +10,7 @@ import { SellerService } from '../services/seller.service';
 export class SellerAuthComponent implements OnInit {
   showLogin=false;
   authError:String='';
+  
   constructor(private seller: SellerService) {}
 
   ngOnInit(): void {

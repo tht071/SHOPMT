@@ -71,7 +71,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     // MatListModule
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
