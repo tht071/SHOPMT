@@ -16,6 +16,9 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5px;
+  /* background-color: hsl(252, 30%, 95%);
+  border-radius: 2rem;
+  padding: 0.6rem 1rem; */
 }
 
 .nav .nav-search input {
@@ -24,12 +27,24 @@
     border: 1px solid rgb(0, 0, 0);
     height: 39px;
     border-right: none;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+
+
+    /* background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 100%); */
 }
 
 .nav .nav-search button{
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
     height: 39px;
+
 }
 
 .nav ul {

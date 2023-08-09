@@ -61,15 +61,15 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div *ngIf="menuType!=='seller'" class="nav-search">
-          <input type="text"
+          <input class="fa fa-search" type="search"
           #searchInput
           (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Tìm kiếm sản phẩm" />
           <button (click)="submitSearch(searchInput.value)" >Search</button>
-          <ul class="suggested-search" *ngIf="searchResult">
+          <!-- <ul class="suggested-search" *ngIf="searchResult">
             <li *ngFor="let item of searchResult">
               <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav ml-auto">

@@ -158,7 +158,7 @@
   transition: all .3s ease;
 }
 .cart-btn:hover{
-  color: #ff4400;
+  color: #000000;
 }
 .cart-btn i {
   margin-right: 4px;

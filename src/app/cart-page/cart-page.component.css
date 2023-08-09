@@ -6,7 +6,7 @@
     text-align: center;
 }
 .details {
-   
+
 }
 .details img{
     height: 100px;
@@ -20,7 +20,7 @@
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 15px;
-    
+
 }
 .summary h3{
     text-align: center;
@@ -34,4 +34,29 @@
 .summary ul li{
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
+}
+.read-more {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 0;
+  display: block;
+  background: #333;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ;
+
+}
+.read-more i {
+  margin-left: 4px;
+
+}
+.read-more:hover{
+  background: #fe5b29;
+  color: #fff;
+
+}
+.read-more:hover i {
+  margin-left: 6px;
 }

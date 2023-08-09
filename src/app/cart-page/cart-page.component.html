@@ -1,10 +1,13 @@
+<div class="container">
+
 
 <div class="cart-page">
-<h1>
-    Giỏ Hàng
-</h1>
+
 <div class="row">
 <div class="col-sm-8 details">
+  <h1>
+    Giỏ Hàng
+</h1>
     <ul *ngFor="let cart of cartData">
         <li>
             <img src="{{cart.image}}" alt="">
@@ -13,27 +16,28 @@
             <span> {{cart.name}}</span>
         </li>
         <li>
-            <span> Giá : {{cart.price}}</span>
+            <span> Giá : {{cart.price | currency : currencyCode : currencyFormat}} </span>
         </li>
         <li>
             <span> Số lượng : {{cart.quantity}}</span>
         </li>
         <li >
-           <button class="form-button"(click)="removeToCart(cart.id)" >Xóa</button>
+           <button class="fa fa-trash read-more "(click)="removeToCart(cart.id)" > Xóa</button>
         </li>
     </ul>
 
 </div>
 <div class="col-sm-4 summary">
-<h3>Chi tiết hóa đơn</h3>
+<h1>Chi tiết hóa đơn</h1>
 <ul>
-    <li> <span>Giá sản phẩm:</span><span>{{priceSummary.price}}</span></li>
-    <li> <span>Thuế:</span><span>{{priceSummary.tax}}</span></li>
-    <li> <span>Phí vận chuyển:</span><span>{{priceSummary.delivery}}</span></li>
-    <li> <span>Mã giảm giá:</span><span>{{priceSummary.discount}}</span></li>
-    <li> <span><h4>Tổng tiền</h4></span> <span><h4>{{priceSummary.total}}</h4></span></li>
-    <button (click)="checkout()" class="form-button max-width" >Thanh toán</button>
+    <li> <span>Giá sản phẩm:</span><span>{{priceSummary.price | currency : currencyCode : currencyFormat}}</span></li>
+    <li> <span>Thuế:</span><span>{{priceSummary.tax | currency : currencyCode : currencyFormat}}</span></li>
+    <li> <span>Phí vận chuyển:</span><span>{{priceSummary.delivery | currency : currencyCode : currencyFormat}}</span></li>
+    <li> <span>Mã giảm giá:</span><span>{{priceSummary.discount | currency : currencyCode : currencyFormat}}</span></li>
+    <li> <span><h4>Tổng tiền</h4></span> <span><h4>{{priceSummary.total | currency : currencyCode : currencyFormat}}</h4></span></li>
+    <button (click)="checkout()" class="read-more max-width" >Thanh toán</button>
 </ul>
+</div>
 </div>
 </div>
 </div>

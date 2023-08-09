@@ -10,6 +10,7 @@
       </div>
     </ng-template>
   </ngb-carousel>
+
   <!-- <div class="search_section">
     <div class="container">
        <div class="row">
@@ -81,13 +82,24 @@
 
 </div>
 </div> -->
+<!-- <section class="testimonial">
+  <div class="containers" >
+    <owl-carousel-o [options]="test">
+      <ng-template *ngFor="let item of popularProducts" carouselSlide>
+        <div class="testimonial-image">
+          <img routerLink="/details/{{item.id}}" src="{{item.image}}" alt="Testimonial">
 
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section> -->
 
 
 <section class="bg-color">
   <div class="containers">
       <div class="title">
-          <p>The Best Seller Of Hitheme</p>
+          <p>Sản Phẩm Bán Chạy Của Cửa Hàng</p>
           <h2><span>Best</span> Seller</h2>
       </div>
       <div class="row ">
@@ -125,7 +137,7 @@
                           <i class="fa fa-star-o"></i>
                           <i class="fa fa-star-o"></i>
                       </div>
-                      <p><span class="money">${{item.price}}</span><span class="price-old">$89.00</span></p>
+                      <p><span class="money">{{item.price | currency : currencyCode : currencyFormat}}</span><span class="price-old"> {{89000 | currency : currencyCode : currencyFormat}} </span></p>
                   </div>
               </div>
           </div>

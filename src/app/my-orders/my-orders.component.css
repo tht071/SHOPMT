@@ -17,3 +17,27 @@
     border-bottom:1px solid #ddd;
 
 }
+.read-more {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 0;
+  display: block;
+  background: #333;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ;
+
+}
+.read-more i {
+  margin-left: 4px;
+
+}
+.read-more:hover{
+  background: #fe5b29;
+  color: #fff;
+
+}
+.read-more:hover i {
+  margin-left: 6px;
+}

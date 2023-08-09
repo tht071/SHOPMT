@@ -2,6 +2,9 @@ table{
     text-align: left;
     color: black;
     border-collapse: collapse;
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
 }
 img{
     height: 100px;

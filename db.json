@@ -11,6 +11,12 @@
       "password": "tri2gmail.com",
       "email": "123123",
       "id": 3
+    },
+    {
+      "name": "",
+      "password": "admin",
+      "email": "name@admin.com",
+      "id": 4
     }
   ],
   "products": [
@@ -92,20 +98,7 @@
       "id": 2
     }
   ],
-  "cart": [
-    {
-      "name": "phone",
-      "price": "13000",
-      "category": "mobile",
-      "color": "black",
-      "description": "phone 14",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "quantity": 1,
-      "productId": 8,
-      "userId": 2,
-      "id": 1
-    }
-  ],
+  "cart": [],
   "orders": [
     {
       "email": "",
@@ -127,9 +120,9 @@
       "email": "fogaming07112002@gmail.com",
       "address": "Thôn Hà Trữ B - Xã Phú Gia - Huyện Phú Vang - Tỉnh Thừa Thiên Huế",
       "contact": "0335605553",
-      "totalPrice": 54100,
+      "totalPrice": 28100,
       "userId": 2,
-      "id": 3
+      "id": 4
     }
   ],
   "categories": [

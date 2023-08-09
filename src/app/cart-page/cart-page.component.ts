@@ -17,6 +17,8 @@ export class CartPageComponent implements OnInit {
     delivery: 0,
     total: 0
   }
+  currencyCode = 'VND';
+  currencyFormat = 'symbol-narrow';
   constructor(private product: ProductService, private router: Router) { }
 
   ngOnInit(): void {
