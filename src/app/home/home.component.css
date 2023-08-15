@@ -212,6 +212,7 @@ span.current {
 .card {
     transition: all .2s ease-in-out 0s;
     border-radius: 3px;
+    margin-top: 20px;
 }
 
 .card-main {
@@ -419,6 +420,7 @@ span.current {
   transition: all .3s ease;
   margin: 0% auto;
   position: relative;
+  
 }
 .round-icon{
   position: absolute;
@@ -438,6 +440,7 @@ span.current {
 .policy-card p {
   color: #dbdbdb;
   font-style: italic;
+
 }
 .policy-card:hover .round{
   background: #fe5b29;
@@ -446,7 +449,7 @@ span.current {
 .policy-product{
   padding: 60px 0;
   background: #eee;
-  /* padding-bottom: -100px; */
+
 }
 .policy-p-card {
   background: #fff;

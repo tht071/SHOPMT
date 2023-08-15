@@ -1,60 +1,69 @@
-<div class="user-auth">
- <div *ngIf="!showLogin"  class="sign-up">
-  <h1 >Đăng nhập</h1>
-  <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
-    <input
-      type="text"
-      class="form-input"
-      name="name"
-      placeholder="Enter User Name"
-      ngModel
-    />
-    <input
-      type="text"
-      class="form-input"
-      name="email"
-      placeholder="Enter User Email"
-      ngModel
-    /><input
-    type="password"
-    class="form-input"
-    name="password"
-    placeholder="Enter User Password"
-    ngModel
-  />
-  <button class="form-button">Sign Up</button>
-  <p>Đã có tài khoản? <a (click)="openLogin()" >Bấm vào đây</a></p>
-  </form>
- </div>
- <div *ngIf="showLogin"  class="login">
-  <h1>Đăng ký</h1>
-  <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
-    <p class="error-p">{{authError}}</p>
-    <input
-      type="text"
-      class="form-input"
-      name="email"
-      placeholder="Enter User Email"
-      ngModel
-      email
-      #email="ngModel"
-      required
-    />
-    <p class="invalid-input"><span *ngIf="email.invalid && email.touched " >Vui lòng nhập dữ liệu hợp lệ</span></p>
-    <input
-    type="password"
-    class="form-input"
-    name="password"
-    placeholder="Enter User Password"
-    ngModel
-    minlength="2"
-    maxlength="20"
-    #password="ngModel"
-    required
-  />
-  <p class="invalid-input"><span *ngIf="password.invalid && password.touched " >Vui lòng nhập dữ liệu hợp lệ</span></p>
-  <button [disabled]="userLogin.invalid" class="form-button">Đăng nhập</button>
-  <p>Bạn muốn tạo tài khoản? <a (click)="openSignUp()" >Bấm vào đây</a></p>
-  </form>
- </div>
+<div class="container-fluid p-3" style="background-color: #ececec;">
+  <div class="container product-details p-3" >
+    <div class="row p-3" style="background-color: #ffffff; border-radius: 3px; width: 500px; margin-left: 390px;">
+
+      <div class="user-auth">
+        <div *ngIf="!showLogin"  class="sign-up">
+         <h1 >Đăng Ký</h1>
+         <form #userSignUp="ngForm" class="common-form" (ngSubmit)="signUp(userSignUp.value)">
+
+          <input
+             type="text"
+             class="form-input"
+             name="name"
+             placeholder="Nhập tài khoản"
+             required
+             ngModel
+           />
+           <input
+             type="text"
+             class="form-input"
+             name="email"
+             placeholder="Enter User Email"
+             ngModel
+           /><input
+           type="password"
+           class="form-input"
+           name="password"
+           placeholder="Enter User Password"
+           ngModel
+         />
+         <button class="form-button">Đăng ký</button>
+         <p>Đã có tài khoản? <a (click)="openLogin()" >Bấm vào đây</a></p>
+         </form>
+        </div>
+        <div *ngIf="showLogin"  class="login">
+         <h1>Đăng Nhập</h1>
+         <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+           <p class="error-p">{{authError}}</p>
+           <input
+             type="text"
+             class="form-input"
+             name="email"
+             placeholder="Enter User Email"
+             ngModel
+             email
+             #email="ngModel"
+             required
+           />
+           <p class="invalid-input"><span *ngIf="email.invalid && email.touched " >Vui lòng nhập dữ liệu hợp lệ</span></p>
+           <input
+           type="password"
+           class="form-input"
+           name="password"
+           placeholder="Enter User Password"
+           ngModel
+           minlength="2"
+           maxlength="20"
+           #password="ngModel"
+           required
+         />
+         <p class="invalid-input"><span *ngIf="password.invalid && password.touched " >Vui lòng nhập dữ liệu hợp lệ</span></p>
+         <button [disabled]="userLogin.invalid" class="form-button">Đăng nhập</button>
+         <p>Bạn muốn tạo tài khoản? <a (click)="openSignUp()" >Bấm vào đây</a></p>
+         </form>
+        </div>
+       </div>
+</div>
+</div>
 </div>

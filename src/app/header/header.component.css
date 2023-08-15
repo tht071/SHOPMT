@@ -16,21 +16,24 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5px;
-  /* background-color: hsl(252, 30%, 95%);
-  border-radius: 2rem;
-  padding: 0.6rem 1rem; */
 }
-
+.home{
+  font-size: 14px;
+}
 .nav .nav-search input {
     flex: 1;
-    color: rgb(0, 0, 0);
+    color: rgb(6, 3, 9);
     border: 1px solid rgb(0, 0, 0);
+
     height: 39px;
     border-right: none;
-    margin-left: 1rem;
-    font-size: 0.9rem;
-    border-radius: 2rem;
-    padding: 0.6rem 1rem;
+}
+
+.nav .nav-search button{
+    color: blueviolet;
+    border: 1px solid rgb(0, 0, 0);
+    height: 39px;
+}
 
 
     /* background: transparent;
@@ -38,7 +41,7 @@
     margin-left: 1rem;
     font-size: 0.9rem;
     color: hsl(0, 0%, 100%); */
-}
+
 
 .nav .nav-search button{
     color: rgb(0, 0, 0);
@@ -159,3 +162,32 @@ h1 a{
   font-size: 40px;
 }
 
+.suggested-search{
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  display: list-item !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 300px;
+}
+.suggested-search li {
+  padding:5px;
+  border: 1px solid #ddd;
+}
+.suggested-search li a{
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+div ul li a{
+ color: rgb(255, 255, 255);
+}
+.bi-search{
+  color: rgb(255, 255, 255);
+}
+.wrapper{
+  position: relative;
+  margin-top: 13px;
+  margin-right: 10px;
+  margin-left: -45px;
+}

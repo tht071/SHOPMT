@@ -27,7 +27,7 @@
 
   </div>
 </div> -->
-<div class="container">
+<div class="container productList">
   <div class="row">
     <div class="col-lg-3">
   <ul class="list-group" *ngFor="let cat of categoryList">
@@ -38,7 +38,6 @@
 </div>
 <div class="col-lg-9">
   <div class="product-list-wrapper">
-    <button (click)="sortByName()">Sort by name</button>
     <div class="row">
       <div class="col-lg-3" *ngFor="let product of productList">
         <div class="product-item">

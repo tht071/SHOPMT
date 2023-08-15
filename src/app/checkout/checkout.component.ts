@@ -9,6 +9,8 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+  currencyCode = 'VND';
+  currencyFormat = 'symbol';
 
   totalPrice: number | undefined;
   cartData: cart[] | undefined;

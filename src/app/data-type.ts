@@ -49,6 +49,7 @@ export interface order {
   id:number|undefined
 }
 export interface Category {
-  id : string;
-  categoryName : string;
+  id: number ;
+  name: string;
+  image:string;
 }

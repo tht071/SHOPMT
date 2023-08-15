@@ -1,3 +1,14 @@
+<div class="container-fluid p-3" style="background-color: #ececec">
+  <div class="container product-details p-3">
+    <div
+    class="row p-3"
+    style="
+      background-color: #ffffff;
+      border-radius: 3px;
+      width: 500px;
+      margin-left: 400px;
+    "
+  >
 <div class="seller-auth">
   <div *ngIf="!showLogin" class="sign-up">
     <h1>Đăng ký quản lý</h1>
@@ -24,7 +35,11 @@
         ngModel
       />
       <button class="form-button">Đăng ký</button>
-      <a class="auth-toggle-link" (click)="openLogin()">Đã có tài khoản? Bấm để đăng nhập</a>
+      <span class="clickhere"
+              >Bạn đã có tài khoản?
+              <a class="auth-toggle-link clickhere" (click)="openLogin()"
+                >Nhấp vào đây</a>
+              </span>
     </form>
   </div>
 
@@ -51,4 +66,7 @@
 
     </form>
   </div>
+</div>
+</div>
+</div>
 </div>

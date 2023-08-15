@@ -35,8 +35,7 @@
     {
       "name": "Noise Smart Watch",
       "price": "2000",
-      "category": "Watch",
-      "color": "Black",
+      "color": "#7e4e4e",
       "description": "Noise smart watch for man and women both",
       "image": "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/302655/xiaomi-redmi-note-12-plus-xanh-duong-thumb-600x600.jpg",
       "id": 7
@@ -94,6 +93,15 @@
       "description": "",
       "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
       "id": 13
+    },
+    {
+      "name": "2123124124",
+      "price": 213124214,
+      "categoryId": "ádasd",
+      "color": "#801e1e",
+      "description": "ádasd",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 14
     }
   ],
   "users": [
@@ -114,22 +122,15 @@
       "email": "name@admin.com",
       "password": "admin",
       "id": 3
-    }
-  ],
-  "cart": [
+    },
     {
-      "name": "admin",
-      "price": "15000",
-      "category": "mobile",
-      "color": "black",
-      "description": "bh",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "quantity": 1,
-      "productId": 9,
-      "userId": 2,
-      "id": 1
+      "name": "",
+      "email": "name@admin.com",
+      "password": "admin",
+      "id": 4
     }
   ],
+  "cart": [],
   "orders": [
     {
       "email": "",
@@ -154,6 +155,14 @@
       "totalPrice": 28100,
       "userId": 2,
       "id": 4
+    },
+    {
+      "email": "ádasd",
+      "contact": "ádasd",
+      "address": "ádasd",
+      "totalPrice": 30100,
+      "userId": 2,
+      "id": 5
     }
   ],
   "categories": [

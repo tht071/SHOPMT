@@ -1,11 +1,12 @@
-<div class="container">
-
+<div class="container-fluid p-3" style="background-color: #ececec">
+  <div class="container mb-3">
+    <div class="row" style="background-color: #ffffff; border-radius: 3px">
 
 <div class="cart-page">
 
 <div class="row">
 <div class="col-sm-8 details">
-  <h1>
+  <h1 class="mb-4" style="color: #fe5b29">
     Giỏ Hàng
 </h1>
     <ul *ngFor="let cart of cartData">
@@ -28,7 +29,7 @@
 
 </div>
 <div class="col-sm-4 summary">
-<h1>Chi tiết hóa đơn</h1>
+<h1 class="mb-4" style="color: #fe5b29">Chi tiết hóa đơn</h1>
 <ul>
     <li> <span>Giá sản phẩm:</span><span>{{priceSummary.price | currency : currencyCode : currencyFormat}}</span></li>
     <li> <span>Thuế:</span><span>{{priceSummary.tax | currency : currencyCode : currencyFormat}}</span></li>
@@ -37,6 +38,8 @@
     <li> <span><h4>Tổng tiền</h4></span> <span><h4>{{priceSummary.total | currency : currencyCode : currencyFormat}}</h4></span></li>
     <button (click)="checkout()" class="read-more max-width" >Thanh toán</button>
 </ul>
+</div>
+</div>
 </div>
 </div>
 </div>

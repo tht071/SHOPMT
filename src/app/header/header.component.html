@@ -61,43 +61,22 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div *ngIf="menuType!=='seller'" class="nav-search">
-          <input class="fa fa-search" type="search"
+          <input type="text" style="border-radius: 5px;"
           #searchInput
-          (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Tìm kiếm sản phẩm" />
-          <button (click)="submitSearch(searchInput.value)" >Search</button>
-          <!-- <ul class="suggested-search" *ngIf="searchResult">
-            <li *ngFor="let item of searchResult">
-              <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
-            </li>
-          </ul> -->
+          (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder=" Tìm kiếm sản phẩm" />
+          <button (click)="submitSearch(searchInput.value) " style="margin-left: 2px; margin-top: 0px;background-color: #fe5b29;border-radius: 5px; width: 50px; height: 40px;"><svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-search " viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav ml-auto">
-              <!-- <li class="nav-item">
-                 <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="gallery.html">Vehicles</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="client.html">Client</a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link" href="contact.html">Contact</a>
-              </li> -->
               <div class="menu" [ngSwitch]="menuType">
                 <ul *ngSwitchCase="'default'" >
                   <li><a routerLink="">Trang chủ</a></li>
                   <li><a routerLink="about">Giới thiệu</a></li>
                   <li><a routerLink="contact">Liên hệ</a></li>
                   <li><a [routerLink]="cartItems>0?'cart-page':null">Giỏ hàng({{cartItems}})</a></li>
-                  <li><a routerLink="user-auth">Đăng nhập/Đăng ký</a></li>
+                  <li><a routerLink="user-auth">Đăng nhập</a></li>
 
 
                 </ul>
@@ -111,10 +90,9 @@
                   <li><a [routerLink]="cartItems>0?'cart-page':null">Giỏ hàng({{cartItems}})</a></li>
                 </ul>
                 <ul *ngSwitchCase="'seller'" >
-                  <li><a routerLink="seller-add-product">Thêm sản phẩm</a></li>
-                  <li><a routerLink="seller-home">Danh sách</a></li>
-                  <li><a (click)="logout()">Đăng xuất</a></li>
                   <li><a href="#">{{sellerName | titlecase}}</a></li>
+                  <li><a (click)="logout()">Đăng xuất</a></li>
+
                 </ul>
                </div>
            </ul>

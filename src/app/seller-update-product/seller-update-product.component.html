@@ -1,53 +1,269 @@
-<div class="update-product">
-    <h1>Update Product</h1>
-    <p class="message-p">{{productMessage}}</p>
-    <form #addProduct="ngForm"
+<!-- <div class="update-product">
+  <h1>Update Product</h1>
+  <form
+    #addProduct="ngForm"
     (ngSubmit)="submit(addProduct.value)"
-     class="common-form">
-      <input
-        type="text"
-        class="form-input"   
-        placeholder="Nhập tên sản phẩm"
-        name="name"
-        ngModel="{{productData?.name}}"
-      />
-      <input
+    class="common-form"
+  >
+    <input
       type="text"
       class="form-input"
-      placeholder="Nhập giá sản phẩm"
+      placeholder="Enter Product Name"
+      name="name"
+      ngModel="{{ productData?.name }}"
+    />
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Price"
       name="price"
-      ngModel="{{productData?.price}}"
+      ngModel="{{ productData?.price }}"
+    />
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Category"
+      name="category"
+      ngModel="{{ productData?.category }}"
+    />
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Color"
+      name="color"
+      ngModel="{{ productData?.color }}"
+    />
+    <textarea
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Description"
+      name="description"
+      ngModel="{{ productData?.description }}"
+    ></textarea>
+
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Image URL"
+      name="image"
+      ngModel="{{ productData?.image }}"
+    />
+    <button class="form-button">Update Product</button>
+  </form>
+</div> -->
+<!-- <div class="add-product">
+  <h1>Add New Product</h1>
+  <p class="message-p">{{addProductMessage}}</p>
+  <form #addProduct="ngForm"
+  (ngSubmit)="submit(addProduct.value)"
+   class="common-form">
+    <input
+      type="text"
+      class="form-input"
+      placeholder="Enter Product Name"
+      name="name"
+      ngModel
     />
     <input
     type="text"
     class="form-input"
-    placeholder="Nhập danh mục sản phẩm"
-    name="category"
-    ngModel="{{productData?.category}}"
+    placeholder="Enter Product Price"
+    name="price"
+    ngModel
   />
   <input
   type="text"
   class="form-input"
-  placeholder="Nhập màu sản phẩm"
-  name="color"
-  ngModel="{{productData?.color}}"
-  />
-  <textarea
-  type="text"
-  class="form-input"
-  placeholder="Nhập mô tả sản phẩm"
-  name="description"
-  ngModel="{{productData?.description}}"
-  ></textarea>
+  placeholder="Enter Product Category"
+  name="category"
+  ngModel
+/>
+<input
+type="text"
+class="form-input"
+placeholder="Enter Product Color"
+name="color"
+ngModel
+/>
+<textarea
+type="text"
+class="form-input"
+placeholder="Enter Product Description"
+name="description"
+ngModel
+></textarea>
 
-  <input
-  type="text"
-  class="form-input"
-  placeholder="Nhập URL hình ảnh sản phẩm"
-  name="image"
-  ngModel="{{productData?.image}}"
-  />
-  <button class="form-button">Update Product</button>
+<input
+type="text"
+class="form-input"
+placeholder="Enter Product Image URL"
+name="image"
+ngModel
+/>
+<button class="form-button">Add Product</button>
 
-    </form>
+  </form>
+</div> -->
+<div class="admin-page">
+  <div class="admin-nav " style="  font-size: 20px;">
+    <!-- <a href="seller" class="all-product"><i class="fa fa-laptop"></i> Sản phẩm</a><br>
+    <a href="seller-category" class="all-product"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+      <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+      <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+    </svg> Danh mục</a><br>
+    <a href="seller-add-category" class="add-product" style="margin-left: 15px;"><i class="fa fa-plus"></i> Thêm danh mục</a><br>
+    <a href="seller-order" class="all-product"><svg viewBox="0 0 18 24" style="width: 20px; margin-top:-5px;margin-right: 5px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.9637 2.95195H10.7919C10.373 1.79337 9.27584 0.954399 7.97918 0.954399C6.68252 0.954399 5.58535 1.79337 5.16643 2.95195H1.99461C0.897441 2.95195 -0.000244141 3.85085 -0.000244141 4.9495L0.0462926 21.0481C0.0462926 22.1467 0.943978 23.0456 2.04115 23.0456H8.13543C7.54533 22.4721 7.32914 22.1792 6.98295 21.4322H1.67845L1.63191 4.58457H3.98947V5.39127C3.98947 6.48992 4.88715 7.38882 5.98432 7.38882H9.97404C11.0712 7.38882 11.9689 6.48992 11.9689 5.39127V4.58457H14.2811V10.4389C14.9893 10.5388 15.3402 10.7486 15.9586 11.0382V4.9495C15.9586 3.85085 15.0609 2.95195 13.9637 2.95195ZM7.97918 5.39127C7.34445 5.39127 6.52838 4.98792 6.52838 3.95073C6.52838 3.37451 6.93641 2.56781 7.97918 2.56781C8.52777 2.56781 9.38465 2.98544 9.38465 3.95073C9.38465 4.91601 8.65794 5.39127 7.97918 5.39127ZM13.0129 13.0579C10.26 13.0579 8.02572 15.2951 8.02572 18.0517C8.02572 20.8084 10.26 23.0456 13.0129 23.0456C15.7658 23.0456 18 20.8084 18 18.0517C18 15.2951 15.7658 13.0579 13.0129 13.0579ZM14.2995 20.0493L12.6538 18.4013C12.5607 18.3085 12.5071 18.1832 12.5042 18.0517V15.5648C12.5042 15.2851 12.7236 15.0654 13.0029 15.0654C13.2822 15.0654 13.5016 15.2851 13.5016 15.5648V17.852L14.9977 19.3501C15.0443 19.3959 15.0814 19.4504 15.1069 19.5106C15.1323 19.5708 15.1456 19.6354 15.1459 19.7007C15.1462 19.7661 15.1336 19.8308 15.1088 19.8913C15.084 19.9517 15.0474 20.0066 15.0013 20.0528C14.9551 20.099 14.9003 20.1356 14.84 20.1605C14.7796 20.1853 14.7149 20.198 14.6497 20.1976C14.5844 20.1973 14.5199 20.184 14.4598 20.1586C14.3997 20.1331 14.3452 20.096 14.2995 20.0493Z" fill="white"></path>
+    </svg> Đơn hàng</a><br>
+    <a href="seller-user" class="all-product"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+    </svg> Người dùng</a><br>
+    <a href="seller-contact" class="all-product"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-reply-fill" viewBox="0 0 16 16">
+      <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+    </svg> Phản hồi</a><br> -->
+    <div class="side-bav-content">
+      <ul class="nav-list">
+        <li class="nav-list-item ">
+          <i ><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+          </svg></i>
+          <span >
+            <a href="#">Trang chủ</a>
+          </span>
+        </li>
+        <li class="nav-list-item ">
+          <i ><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-fill" viewBox="0 0 16 16">
+            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5ZM15 4.667V5H1v-.333L1.5 4h6V1h1v3h6l.5.667Z"/>
+          </svg></i>
+          <span >
+            <a href="seller-home">Sản phẩm</a>
+          </span>
+        </li>
+        <li class="nav-list-item ">
+          <i ><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg></i>
+          <span >
+            <a href="#">Hóa đơn</a>
+          </span>
+        </li>
+        <li class="nav-list-item ">
+          <i ><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+          </svg></i>
+          <span >
+            <a href="#">Cài đặt</a>
+          </span>
+        </li>
+        <li class="nav-list-item ">
+          <i ><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg></i>
+          <span>
+            <a href="#">Giới thiệu</a>
+          </span>
+        </li>
+        <li class="nav-list-item ">
+          <i ><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg></i>
+          <span >
+            <a href="#">Liên hệ</a>
+          </span>
+        </li>
+      </ul>
+
+    </div>
+
   </div>
+  <div class="admin-content">
+    <h2 class="mt-6 p-4" style="color: #ff4b2b; text-align: center">
+      Cập nhật sản phẩm
+    </h2>
+    <p class="message-p">{{ productMessage }}</p>
+
+    <div class="">
+      <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
+        <label for="fname">Tên sản phẩm</label>
+        <input
+          type="text"
+          id="fname"
+          #name="ngModel"
+          name="name"
+          ngModel="{{ productData?.name }}"
+          required
+          placeholder="Nhập tên sản phẩm"
+        />
+        <p class="invalid-input">
+          <br />
+          <span
+            class="invalid-input"
+            *ngIf="name.invalid && (name.dirty || name.touched)"
+          >
+            Tên sản phẩm không được để trống.
+          </span>
+        </p>
+        <label for="lname">Giá sản phẩm</label>
+        <input
+          type="number"
+          class="price"
+          name="price"
+          ngModel="{{ productData?.price }}"
+          #price="ngModel"
+          required
+          placeholder="Nhập giá sản phẩm"
+        />
+        <p class="invalid-input">
+          <br /><br />
+          <span
+            class="invalid-input"
+            *ngIf="price.invalid && (price.dirty || price.touched)"
+          >
+            Giá sản phẩm không được để trống.
+          </span>
+        </p>
+
+        <label for="color">Màu sản phẩm: </label> <br />
+        <input
+          type="color"
+          class="color"
+          #color="ngModel"
+          name="color"
+          ngModel
+          placeholder="Nhập màu sản phẩm"
+          required
+        />
+        <p class="invalid-input">
+          <br />
+          <span *ngIf="color.invalid && color.touched"
+            >Màu sản phẩm không được để trống</span
+          >
+        </p>
+        <label for="description">Mô tả chi tiết</label>
+        <textarea
+          name="description"
+          ngModel="{{ productData?.description }}"
+          placeholder="Mô tả chi tiết"
+          style="height: 200px"
+        ></textarea>
+        <label for="color">Ảnh sản phẩm</label>
+        <input
+          type="text"
+          name="image"
+          #image="ngModel"
+          ngModel="{{ productData?.image }}"
+          required
+          placeholder="Ảnh sản phẩm"
+        />
+        <p class="invalid-input">
+          <br />
+          <span *ngIf="image.invalid && (image.dirty || image.touched)">
+            Ảnh sản phẩm không được để trống.
+          </span>
+        </p>
+
+        <button type="submit" [disabled]="addProduct.invalid">Cập nhật</button>
+      </form>
+    </div>
+  </div>
+</div>

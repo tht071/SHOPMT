@@ -29,7 +29,7 @@ export class UserAuthComponent implements OnInit {
       }else{
         this.localCartToRemoteCart();
       }
-      
+
     })
   }
   openSignUp(){
@@ -45,7 +45,7 @@ this.showLogin=true;
    let userId= user && JSON.parse(user).id;
    if(data){
     let cartDataList:product[]= JSON.parse(data);
-  
+
     cartDataList.forEach((product:product, index)=>{
       let cartData:cart={
         ...product,
@@ -69,6 +69,6 @@ this.showLogin=true;
    setTimeout(() => {
     this.product.getCartList(userId)
    }, 2000);
-    
+
   }
 }
