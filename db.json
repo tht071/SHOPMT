@@ -17,6 +17,18 @@
       "password": "admin",
       "email": "name@admin.com",
       "id": 4
+    },
+    {
+      "name": "admin",
+      "password": "admin",
+      "email": "name@admin.com",
+      "id": 5
+    },
+    {
+      "name": "",
+      "password": "admin",
+      "email": "name@admin.com",
+      "id": 6
     }
   ],
   "products": [
@@ -26,7 +38,7 @@
       "category": "Watch",
       "color": "Black",
       "description": "Noise smart watch for man and women both",
-      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "image": "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/302655/xiaomi-redmi-note-12-plus-xanh-duong-thumb-600x600.jpg",
       "id": 7
     },
     {
@@ -96,9 +108,28 @@
       "email": "name@admin.com",
       "password": "admin",
       "id": 2
+    },
+    {
+      "name": "",
+      "email": "name@admin.com",
+      "password": "admin",
+      "id": 3
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "admin",
+      "price": "15000",
+      "category": "mobile",
+      "color": "black",
+      "description": "bh",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": 9,
+      "userId": 2,
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "email": "",

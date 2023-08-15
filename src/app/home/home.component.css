@@ -543,3 +543,49 @@ span.current {
 .partner image:hover{
   box-shadow: 0 0 10px 1px #dbdbdb;
 }
+.testimonial{
+  background-image: url(../../assets/img/phone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0;
+  position: relative;
+}
+.testimonial-image{
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.testimonial-image img{
+  border: 5px solid rgba(255, 255, 255, .1);
+  width: 100%;
+  height: 100%;
+
+}
+/*
+.testimonial-content h2{
+  font-size: 16px;
+  color: #ff4000;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 9px 0 .5rem;
+  line-height: 1.2;
+}
+.testimonial-content h3{
+  font-size: 15px;
+  color: #fff;
+  line-height: 16px;
+  margin: 8px 0 10px;
+  letter-spacing: 0.4px;
+
+}
+.testimonial-content p{
+  position: relative;
+  margin: 28px 30px 70px 30px;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 23px;
+  color: #ccc;
+
+} */

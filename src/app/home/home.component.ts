@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
  trendyProducts:undefined | product[];
  url: string = "../assets/img1.jpg";
  test: OwlOptions = {
-  loop: false,
+  loop: true,
   mouseDrag: true,
   touchDrag: true,
   pullDrag: true,

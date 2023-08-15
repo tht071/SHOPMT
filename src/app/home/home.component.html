@@ -87,8 +87,12 @@
     <owl-carousel-o [options]="test">
       <ng-template *ngFor="let item of popularProducts" carouselSlide>
         <div class="testimonial-image">
-          <img routerLink="/details/{{item.id}}" src="{{item.image}}" alt="Testimonial">
-
+          <img src="{{item.image}}" alt="Testimonial">
+        </div>
+        <div class="testimonial-content text-center">
+          <h2>{{item.name}}</h2>
+          <h3>{{item.price}}</h3>
+          <p>{{item.description}}</p>
         </div>
       </ng-template>
     </owl-carousel-o>
