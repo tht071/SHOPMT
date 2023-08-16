@@ -11,13 +11,15 @@ import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 export class SellerHomeComponent implements OnInit {
   p:any;
   pageSize: string | number | undefined ;
-  productList: undefined | product[];
+  productList: any | product[];
   productMessage: undefined | string;
   icon = faTrash;
   iconEdit=faEdit;
   products = [];
   trendyProducts:any| product[];
-
+  itemPerpage: any;
+  currencyCode = 'VND';
+  currencyFormat = 'symbol-narrow';
 
 
   constructor(private product: ProductService ) {}

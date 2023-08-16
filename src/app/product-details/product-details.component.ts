@@ -10,6 +10,8 @@ import { ProductService } from '../services/product.service';
 })
 export class ProductDetailsComponent implements OnInit {
   productData:undefined | product;
+  currencyCode = 'VND';
+  currencyFormat = 'symbol-narrow';
   productQuantity:number=1;
   removeCart=false;
   cartData:product|undefined;

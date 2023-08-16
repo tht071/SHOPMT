@@ -69,8 +69,7 @@
         <p>Miêu tả : {{productData.description}}</p>
         <div>Màu :<h3 [style.backgroundColor]="productData.color" class="product-color"></h3></div>
         <h3>
-          <span class="selling-amount">Giá: ${{productData.price}}</span>
-          <span class="selling-discount">$5000</span>
+          <span class="selling-amount">Giá: {{productData.price | currency : currencyCode : currencyFormat}}</span>
         </h3>
         <div class="selling-button" (click)="addToCart()">
           <a href="javascript:void(0);" class="cart-btn"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng</a>
