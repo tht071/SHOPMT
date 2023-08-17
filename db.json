@@ -90,7 +90,7 @@
     },
     {
       "name": "Samsung Galaxy S22 Ultra 5G",
-      "price": 17.99,
+      "price": 17990000,
       "color": "#000000",
       "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt và lần nữa S22 Ultra 5G tiếp tục trở lại đầy ngoạn mục mang đến 1 diện mạo mới khi tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng và có mức giá bán siêu hấp dẫn.",
       "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
@@ -123,7 +123,19 @@
       "id": 4
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "OPPO Find N2 Flip 5G ",
+      "price": 19990000,
+      "color": "#000000",
+      "description": "OPPO Find N2 Flip 5G - chiếc điện thoại gập đầu tiên của OPPO đã được giới thiệu chính thức tại Việt Nam vào tháng 03/2023. Sở hữu cấu hình mạnh mẽ cùng thiết kế siêu nhỏ gọn giúp tối ưu kích thước, chiếc điện thoại sẽ cùng bạn nổi bật trong mọi không gian với vẻ ngoài đầy cá tính.",
+      "image": "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/299034/oppo-n2-flip-den-thumb-600x600.jpg",
+      "quantity": 1,
+      "productId": 9,
+      "userId": 2,
+      "id": 1
+    }
+  ],
   "orders": [
     {
       "email": "",
