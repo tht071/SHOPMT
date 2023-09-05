@@ -35,6 +35,9 @@ import { ContactComponent } from './contact/contact.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { SellerCategoryComponent } from './seller-category/seller-category.component';
+import { SellerAddCategoryComponent } from './seller-add-category/seller-add-category.component';
+import { SellerUpdateCategoryComponent } from './seller-update-category/seller-update-category.component';
 
 
 @NgModule({
@@ -56,7 +59,10 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
     ViewAllProductComponent,
     SideNavComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    SellerCategoryComponent,
+    SellerAddCategoryComponent,
+    SellerUpdateCategoryComponent
   ],
   imports: [
     BrowserModule,

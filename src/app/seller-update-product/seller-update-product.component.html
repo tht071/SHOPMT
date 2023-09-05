@@ -222,7 +222,21 @@ ngModel
             Giá sản phẩm không được để trống.
           </span>
         </p>
-
+        <label for="idcat">Mã danh mục</label>
+        <input
+          type="text"
+          #idCat="ngModel"
+          name="categoryId"
+          ngModel
+          placeholder="Mã danh mục"
+          required
+        />
+        <p class="invalid-input">
+          <br />
+          <span *ngIf="idCat.invalid && idCat.touched"
+            >Mã danh mục không được để trống</span
+          >
+        </p>
         <label for="color">Màu sản phẩm: </label> <br />
         <input
           type="color"

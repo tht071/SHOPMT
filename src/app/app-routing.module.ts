@@ -15,6 +15,9 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { UserAuthComponent } from './user-auth/user-auth.component';
 import { ViewAllProductComponent } from './view-all-product/view-all-product.component';
 import { AboutComponent } from './about/about.component';
+import { SellerCategoryComponent } from './seller-category/seller-category.component';
+import { SellerAddCategoryComponent } from './seller-add-category/seller-add-category.component';
+import { SellerUpdateCategoryComponent } from './seller-update-category/seller-update-category.component';
 
 
 const routes: Routes = [
@@ -45,6 +48,20 @@ const routes: Routes = [
   },{
     component:ProductDetailsComponent,
     path:'details/:productId'
+  },
+  {
+    component: SellerCategoryComponent,
+    path: 'seller-category',
+    canActivate: [AuthGuard],
+  },
+  {
+    component: SellerAddCategoryComponent,
+    path: 'seller-add-category',
+    canActivate: [AuthGuard],
+  },{
+    component: SellerUpdateCategoryComponent,
+    path: 'seller-update-category/:id',
+    canActivate: [AuthGuard],
   },{
     component:UserAuthComponent,
     path:'user-auth'

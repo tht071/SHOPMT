@@ -23,6 +23,9 @@ export class ProductService {
   getProduct(id: string) {
     return this.http.get<product>(`http://localhost:3000/products/${id}`);
   }
+  categoryList(){
+    return this.http.get<Category[]>('http://localhost:3000/category')
+  }
 
   updateProduct(product: product) {
     return this.http.put<product>(
@@ -30,8 +33,15 @@ export class ProductService {
       product
     );
   }
+  private apiUrl = "http://localhost:3000/products";
+  getProducts(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
+  }
   popularProducts() {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=4');
+  }
+  getProductById(categoryId:any) :Observable<any>{
+    return this.http.get<Category[]>(`http://localhost:3000/products?categoryId=${categoryId}`)
   }
 
   trendyProducts() {

@@ -9,6 +9,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  p:any;
+  pageSize: string | number | undefined ;
   currencyCode = 'VND';
   currencyFormat = 'symbol-narrow';
  popularProducts:undefined|product[];

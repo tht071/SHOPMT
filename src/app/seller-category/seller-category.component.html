@@ -81,36 +81,33 @@
       <div class="product-list">
         <p class="message-p">{{ productMessage }}</p>
         <h2 class="mt-6 p-4" style="color: #ff4b2b; text-align: center">
-          DANH SÁCH SẢN PHẨM
+          DANH MỤC
         </h2>
-        <a href="seller-add-product"><button class="custom-button">Thêm sản phẩm</button></a>
+        <a href="seller-add-category"><button class="custom-button">Thêm danh mục</button></a>
 
         <table>
           <thead>
             <tr>
-              <th>Hình ảnh</th>
-              <th>Tên</th>
-              <th>Giá</th>
-              <th>Màu</th>
-              <th>Danh mục</th>
-              <th>Miêu tả</th>
+              <th>ID</th>
+              <th>Tên danh mục</th>
               <th>Hành động</th>
             </tr>
           </thead>
 
           <tbody>
-            <tr *ngFor="let item of productList | paginate : {itemsPerPage : 6, currentPage: p} ">
-              <td><img src="{{ item.image }}" /></td>
-              <td>{{ item.name }}</td>
-              <td>{{ item.price | currency : currencyCode : currencyFormat}}</td>
-              <td>{{ item.color }}</td>
-              <td>{{ item.categoryId}}</td>
-              <td>{{ item.description }}</td>
-              <td>
-                <fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon>
-                <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}"> <fa-icon  [icon]="iconEdit"></fa-icon></a>
+            <tr *ngFor="let item of categoryList | paginate : {itemsPerPage : 6, currentPage: p} ">
+              <td>{{item.id}}</td>
+            <td>{{ item.name }}</td>
 
-              </td>
+            <td>
+              <fa-icon (click)="deleteCategory(item.id)" [icon]="icon"></fa-icon>
+              <a
+                class="adjust-update-link"
+                routerLink="/seller-update-category/{{ item.id }}"
+              >
+                <fa-icon  [icon]="iconEdit"></fa-icon
+              ></a>
+            </td>
             </tr>
           </tbody>
         </table>

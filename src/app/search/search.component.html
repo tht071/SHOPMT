@@ -1,4 +1,4 @@
-<div class="row search-item" *ngFor="let item of searchResult">
+<!-- <div class="row search-item" *ngFor="let item of searchResult">
     <div class="col-sm-3">
       <a routerLink="/details/{{item.id}}">  <img src="{{item.image}}" alt=""></a>
     </div>
@@ -8,4 +8,75 @@
         <p><span>Màu:{{item.color}}</span><span>Danh mục: {{item.category}}</span></p>
         <p>{{item.description}}</p>
     </div>
-</div>
+</div> -->
+<div class="container-fluid p-3" style="background-color: #ececec">
+  <div class="container">
+    <div class="row p-3" style="background-color: #ffffff; border-radius: 3px">
+      <div class="col-lg-3">
+        <ul>
+          <li class="border p-2">
+            <h4>Danh mục sản phẩm</h4>
+            <hr />
+            <a
+              href=""
+              style="margin-left: 5%"
+              href="category/{{ item.id }}"
+              *ngFor="let item of listCategory"
+            >
+              {{ item.name }} <br />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-9">
+        <h1 class="mb-2" style="color: #ff4b2b; text-align: center">
+          Kết quả tìm kiếm
+        </h1>
+        <section class="bg-color">
+          <div class="containers">
+              <div class="row ">
+                  <div class="col-md-3" *ngFor="let item of searchResult">
+                      <div class="card">
+                          <div class="card-main">
+                              <div class="discount">HOT</div>
+                              <div class="label label-green">Miễn phí giao hàng</div>
+                              <div class="product-container">
+                                  <!-- <div class="p" (mouseover)="imageChange($event)"><img src="../assets/img1.jpg"
+                                          alt="Product"></div>
+                                  <div class="p" (mouseover)="imageChange($event)"><img src="../assets/img2.jpg"
+                                          alt="Product"></div>
+                                  <div class="p" (mouseover)="imageChange($event)"><img src="../assets/img3.jpg"
+                                          alt="Product"></div> -->
+                              </div>
+                              <div class="image">
+                                  <img src="{{item.image}}" alt="Product">
+                              </div>
+                              <div class="cart-line"></div>
+                              <div class="cart-item">
+                                  <ul>
+                                      <li><a routerLink="/details/{{item.id}}"><i class="fa fa-shopping-basket"></i></a></li>
+                                      <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                      <li><a href=""><i class="fa fa-search"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="content">
+                              <a href="javascript:void(0);" routerLink="/details/{{item.id}}">{{item.name}}</a>
+                              <div class="rating">
+                                  <i class="fa fa-star-o"></i>
+                                  <i class="fa fa-star-o"></i>
+                                  <i class="fa fa-star-o"></i>
+                                  <i class="fa fa-star-o"></i>
+                                  <i class="fa fa-star-o"></i>
+                              </div>
+                              <p><span class="money">{{item.price | currency : currencyCode : currencyFormat}}</span></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  </div>

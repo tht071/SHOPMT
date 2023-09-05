@@ -143,10 +143,19 @@
                       </div>
                       <p><span class="money">{{item.price | currency : currencyCode : currencyFormat}}</span></p>
                   </div>
+
               </div>
           </div>
+
       </div>
+      <pagination-controls
+      previousLabel="Trước"
+      nextLabel="Tiếp"
+      style="text-align: center"
+      (pageChange)="p = $event"
+    ></pagination-controls>
   </div>
+
 </section>
 
 <section class="policy">
